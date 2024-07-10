@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -10,11 +11,32 @@ text-align:center;
 h3 {
 text-transform: uppercase;
 }
-li {
-overflow: hidden;
-padding: 20px 0;
-border-bottom: 1px solid #eee;
+ul {
+margin: 0;
+padding: 0;
 }
+ul li {
+cursor: pointer;
+position: relative;
+padding: 12px 8px 12px 40px;
+background: #eee;
+font-size: 18px;
+transition: 0.2s;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+ul li:nth-child(odd) {
+background: #f9f9f9;
+}
+ul li:hover {
+background: #ddd;
+}
+
+Chapter 12 Better Project Management: Pull Requests
+
+180
 </style>
 </head>
 <body>
@@ -26,7 +48,6 @@ border-bottom: 1px solid #eee;
 <li>Bring a box to the fox</li>
 </ul>
 <h3>Done</h3>
-Chapter
 <ul>
 <li>Put the mittens on the kittens</li>
 </ul>
